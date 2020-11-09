@@ -1,5 +1,20 @@
-<form action="POST">
-    <input name="email" type="email" placeholder="Email">
-    <input name="password" type="password" placeholder="Password">
+<form action="/login" method="POST">
+    <div class="form-group">
+        <img src="/img/Meet-app-logo.png" alt="meet-app-logo" style="width: 100%;max-width: 150px; height: auto;">
+    </div>
+    {{>message}}
+    <div class="form-group">
+        <input class="form-control" name="email" type="email" placeholder="Email" aria-required="true" autofocus
+            required>
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="password" type="password" placeholder="Password" aria-required="true"
+            required>
+    </div>
+    <a href="#" class="forgot-link">Forgot password?</a>
     <button class="btn btn-primary" type="submit">Login</button>
+    <hr>
+    <div class="form-group">
+        <a id="signup-button-page" href="register">Sign Up</a>
+    </div>
 </form>

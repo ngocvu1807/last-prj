@@ -1,5 +1,34 @@
+body {
+  box-sizing: border-box;
+}
 .login-container {
-  width: 400px;
-  margin-top: 50px;
+  max-width: 400px;
+  margin-top: 250px;
   text-align: center;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content button {
+  width: 80%;
+  margin-top: 10px;
+}
+
+#signup-button-page {
+  width: 80%;
+}
+
+.forgot-link {
+  float: center;
+}
+
+/* .form-group {
+  margin: auto;
+} */
+
+.form-control {
+  width: 80%;
+  margin: auto;
 }
